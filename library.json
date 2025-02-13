@@ -1,0 +1,20 @@
+{
+  "name": "AD5252",
+  "version": "1.0.0",
+  "description": "Arduino library for interfacing with the AD5252 digital potentiometer.",
+  "keywords": ["arduino", "i2c", "digital potentiometer", "AD5252"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvader2/AD5252.git"
+  },
+  "authors": [
+    {
+      "name": "Engr. M. Farhan",
+      "url": "https://github.com/mvader2",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "frameworks": ["arduino"],
+  "platforms": ["atmelavr", "espressif32", "espressif8266"]
+}

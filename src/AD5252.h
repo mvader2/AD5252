@@ -69,7 +69,7 @@ private:
     uint8_t _i2c_address;  ///< I2C address of the AD5252 device.
 
     static constexpr uint8_t RDAC1 = 0x01; ///< Register address for RDAC1.
-    static constexpr uint8_t RDAC2 = 0x03; ///< Register address for RDAC2.
+    static constexpr uint8_t RDAC3 = 0x03; ///< Register address for RDAC2.
 };
 
 #endif // AD5252_H

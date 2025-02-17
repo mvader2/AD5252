@@ -26,7 +26,7 @@ void AD5252::write(uint8_t value) {
 void AD5252::write(bool channel, uint8_t value) {
     if (!isConnected()) return;
 
-    uint8_t reg = (channel == 1) ? RDAC2 : RDAC1;
+    uint8_t reg = (channel == 1) ? RDAC3 : RDAC1;
 
     Wire.beginTransmission(_i2c_address);
     Wire.write(reg);
@@ -41,7 +41,7 @@ uint8_t AD5252::read() {
 uint8_t AD5252::read(bool channel) {
     if (!isConnected()) return 0;
 
-    uint8_t reg = (channel == 1) ? RDAC2 : RDAC1;
+    uint8_t reg = (channel == 1) ? RDAC3 : RDAC1;
 
     Wire.beginTransmission(_i2c_address);
     Wire.write(reg);
